@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item AUX ID Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1 class="title">Item AUX ID Calculator</h1>
+
+<div class="calculation-panels">
+    
+    <div class="calculation-panel">
+        <h3>AUX ID Calculator for Blocks</h3>
+        <button onclick="clearBlockContents()">Clear Contents</button>
+        <br><br>
+        
+        <div>
+            <input type="text" placeholder="Enter Block ID" id="itemInput">
+            <button class="error-button" id="blockIDErrorButton" style="display: none;"><ion-icon name="alert-circle-outline"></ion-icon></button>
+            <div class="error-description" id="blockIDErrorDescription">
+                <i class="ion-ios-information-circle error-icon"></i> Block ID must be a number!
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Enter Block Data" id="blockstateInput">
+            <button class="error-button" id="blockDataErrorButton" style="display: none;"><ion-icon name="alert-circle-outline"></ion-icon></button>
+            <div class="error-description" id="blockDataErrorDescription">
+                <i class="ion-ios-information-circle error-icon"></i> Block Data must be a number!
+            </div>
+        </div>
+        <div>
+            <select id="blockEnch">
+                <option value="0">No Enchantment Glint</option>
+                <option value="32768">Enable Enchantment Glint</option>
+            </select>
+        </div>
+        <div class="copy-button-group">
+            <button onclick="getBlockAUXID()">Return AUX ID <ion-icon name="swap-vertical-outline"></ion-icon></button>
+            <input type="text" id="outputValue" placeholder="AUX ID Value" readonly>
+            <ion-icon name="copy-outline" onclick="copyBlockAUXID()"></ion-icon>
+        </div>
+    </div>
+    
+    <div class="calculation-panel">
+        <h3>AUX ID Calculator for Items</h3>
+        <button onclick="clearItemContents()">Clear Contents</button>
+        <br><br>
+        
+        <div>
+            <input type="text" placeholder="Enter Item ID" id="itemInput2">
+            <button class="error-button" id="itemIDErrorButton" style="display: none;"><ion-icon name="alert-circle-outline"></ion-icon></button>
+            <div class="error-description" id="itemIDErrorDescription">
+                <i class="ion-ios-information-circle error-icon"></i> Item ID must be a number!
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Enter Item Data" id="blockstateInput2">
+            <button class="error-button" id="itemDataErrorButton" style="display: none;"><ion-icon name="alert-circle-outline"></ion-icon></button>
+            <div class="error-description" id="itemDataErrorDescription">
+                Item Data must be a number!
+            </div>
+        </div>
+        <div>
+            <select id="itemEnch">
+                <option value="0">No Enchantment Glint</option>
+                <option value="32768">Enable Enchantment Glint</option>
+            </select>
+        </div>
+        <div class="copy-button-group">
+            <button onclick="getItemAUXID()">Return AUX ID <ion-icon name="swap-vertical-outline"></ion-icon></button>
+            <input type="text" id="outputValue2" placeholder="AUX ID Value" readonly>
+            <ion-icon name="copy-outline" onclick="copyItemAUXID()"></ion-icon>
+        </div>
+    </div>
+ </div>
+    <div class="home-button">
+        <button onclick="redirectToHome()"><ion-icon name="home"></ion-icon></button>
+    </div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
