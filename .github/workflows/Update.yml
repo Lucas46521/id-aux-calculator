@@ -16,7 +16,7 @@ jobs:
         uses: Lucas46521/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
-          build_dir: documentation
+          build_dir: main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
