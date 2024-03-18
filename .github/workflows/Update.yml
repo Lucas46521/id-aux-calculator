@@ -13,10 +13,9 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: success()
-        uses: Lucas46521/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
-          build_dir: main
+          build_dir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
