@@ -161,4 +161,8 @@ function copyItemAUXID() {
 
 function redirectToHome() {
         window.location.href = "https://lucas46521.github.io/";
-    }
+}
+
+function redirectToOfficialSite() {
+    window.location.href = "https://learn.microsoft.com/en-us/minecraft/creator/reference/content/addonsreference/examples/addonitems?view=minecraft-bedrock-stable";
+}
