@@ -155,3 +155,28 @@ input[type="text"] {
 .home-button button:active {
     transform: scale(0.9);
 }
+
+.official-site-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.official-site-button button {
+    background-color: #4CAF50; /* Cor verde */
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    color: #FFFFFF; /* Cor do texto branco */
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.official-site-button button:hover {
+    transform: scale(1.1);
+}
+
+.official-site-button button:active {
+    transform: scale(0.9);
+}
